@@ -1,0 +1,315 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+}
+
+#container {
+    width: 96%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-image: url("../img/water.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#myHeader.header h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.header-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header-add i {
+    padding-left: 10px;
+    margin-right: 5px;
+    color: white;
+}
+
+#myHeader.header input {
+    border-top: solid transparent;
+    border-left: solid transparent;
+    border-bottom: 4px solid #D35400;
+    border-right: solid transparent;
+    background: transparent;
+    width: 60%;
+    height: 10%;
+    font-size: 22px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+#myHeader.header input:hover {
+    border-bottom: 4px solid #6E2C00;
+}
+
+#myHeader.header input:focus {
+    outline: 0;
+}
+
+#myHeader.header input::-webkit-input-placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+#myHeader.header input::-moz-placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+#myHeader.header input:-ms-input-placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+#myHeader.header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 10%;
+    border: 0;
+    height: 7%;
+    background: #81481E;
+    margin-right: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 18px;
+    letter-spacing: 2px;
+    -webkit-box-shadow: 8px 7px 7px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 8px 7px 7px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 8px 7px 7px 2px rgba(0, 0, 0, 0.75);
+}
+
+#myHeader.header button:focus {
+    outline: 0;
+}
+
+#myHeader.header button:hover {
+    color: #81481E;
+    background: whitesmoke;
+}
+
+#list {
+    width: 80%;
+    margin: 30px auto 0 auto;
+}
+
+#list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 5vh;
+    padding: 0 5px 4px 5px;
+    margin-top: 4px;
+    -webkit-box-shadow: 11px 10px 14px -10px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 11px 10px 14px -10px rgba(0, 0, 0, 0.59);
+    box-shadow: 11px 10px 14px -10px rgba(0, 0, 0, 0.59);
+    font-size: 22px;
+}
+
+li .btnElementLi button {
+    font-size: 12px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    background: #B9DFF6;
+    border-radius: 3px;
+    border: none;
+    color: #1C2833;
+}
+
+li .btnElementLi #newBtnDelete {
+    width: auto;
+}
+
+li .btnElementLi #newBtnEdit {
+    width: auto;
+}
+
+li .btnElementLi #newBtnMark {
+    width: auto;
+}
+
+#list li:nth-child(even) {
+    background: #212F3C;
+    color: #808B96;
+}
+
+#list li:nth-child(odd) {
+    background: #808B96;
+    color: #212F3C;
+}
+
+#list li.done {
+    text-decoration: line-through;
+    text-decoration-color: #FF3333;
+    color: #ECF0F1;
+    background: #CCD1D1;
+    opacity: 0.95;
+}
+
+/*popup*/
+#myModal {
+    display: none;
+}
+
+.modal {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #B9DFF6;
+    background-image: url("../img/antracyt.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.modal-content h1 {
+    text-align: center;
+    font-size: 28px;
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+#addForm {
+    text-align: center;
+}
+
+#addForm input {
+    width: 90%;
+}
+
+#addForm button {
+    width: 45%;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #B9DFF6;
+    border-radius: 3px;
+    border: none;
+    color: #1C2833;
+}
+
+#addForm input:focus {
+    outline: 0;
+    color: darkred;
+}
+
+#addForm input::-webkit-input-placeholder {
+    color: #1C2833;
+    font-size: 16px;
+}
+
+#addForm input::-moz-placeholder {
+    color: #1C2833;
+    font-size: 16px;
+}
+
+#addForm input:-ms-input-placeholder {
+    color: #1C2833;
+    font-size: 16px;
+}
+
+.modal-content .close {
+    position: absolute;
+    left: 110%;
+    top: -15%;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 599px) {
+    .header-add i {
+        color: white;
+    }
+
+    #list li {
+        flex-direction: unset;
+    }
+
+    li .btnElementLi button {
+        margin-bottom: unset;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-add i {
+        color: #81481E;
+    }
+
+    #myModal {
+        width: 40%;
+    }
+
+    li .btnElementLi button {
+        font-size: 16px;
+    }
+
+    li .btnElementLi #newBtnDelete {
+        width: auto;
+    }
+
+    li .btnElementLi #newBtnEdit {
+        width: auto;
+    }
+
+    li .btnElementLi #newBtnMark {
+        width: auto;
+    }
+
+    #myHeader.header input::-webkit-input-placeholder {
+        color: #81481E;
+    }
+
+    #myHeader.header input::-moz-placeholder {
+        color: #81481E;
+    }
+
+    #myHeader.header input:-ms-input-placeholder {
+        color: #81481E;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #myHeader.header button {
+        cursor: pointer;
+    }
+
+    #addForm button {
+        cursor: pointer;
+    }
+
+    #myModal {
+        top: 42%;
+    }
+
+    li .btnElementLi button:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    #addForm button:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    .modal-content .close {
+        cursor: pointer;
+    }
+}
+
+
